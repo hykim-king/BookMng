@@ -7,20 +7,20 @@ import java.util.List;
  * @author ITSC
  *
  */
-public interface WorkDiv {
+public interface WorkDiv<T> {
 	/**
 	 * 목록조회
 	 * @param dto
 	 * @return List<DTO>
 	 */
-	public abstract List<DTO> doRetrieve(DTO dto);
+	public abstract List<T> doRetrieve(DTO dto);
 
 	/**
 	 * 등록
 	 * @param DTO
 	 * @return 1(성공)/0(실패)
 	 */
-	public abstract int doSave(DTO dto);
+	public abstract int doSave(T dto);
 
 
 	/**
@@ -28,14 +28,14 @@ public interface WorkDiv {
 	 * @param DTO
 	 * @return 1(성공)/0(실패)
 	 */
-	public int doUpdate(DTO dto);
+	public int doUpdate(T dto);
 	
 	/**
 	 * 삭제
 	 * @param DTO
 	 * @return 1(성공)/0(실패)
 	 */
-	int doDelete(DTO dto);
+	int doDelete(T dto);
 	
 
 	//단건조회
@@ -44,14 +44,7 @@ public interface WorkDiv {
 	 * @param DTO
 	 * @return DTO
 	 */
-	DTO doSelectOne(DTO obj);
-	
-	
-	
-	
-	
-	
-	
+	T doSelectOne(T obj);
 	
 	
 	
