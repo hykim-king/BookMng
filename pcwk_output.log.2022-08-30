@@ -1,0 +1,103 @@
+2022-08-30 14:32:30,791 DEBUG [main] cmn.LoggerManger  ( BookDao.java:43)     - 9791163031222,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문,이고잉 고경희,소프트웨어 공학,2019년 12월 06일,1
+2022-08-30 14:32:30,795 DEBUG [main] cmn.LoggerManger  ( BookDao.java:43)     - 9791162242261,파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발,김석훈,소프트웨어 공학 ,2022-08-30,1
+2022-08-30 14:32:30,795 DEBUG [main] cmn.LoggerManger  ( BookDao.java:43)     - 1163032212-9791163032212,Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석,고경희,소프트웨어 공학,2022-08-30,1
+2022-08-30 14:34:43,852 DEBUG [main] cmn.LoggerManger  ( BookDao.java:43)     - 9791163031222,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문,이고잉 고경희,소프트웨어 공학,2019년 12월 06일,1
+2022-08-30 14:34:46,048 DEBUG [main] cmn.LoggerManger  ( BookDao.java:43)     - 9791162242261,파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발,김석훈,소프트웨어 공학 ,2022-08-30,1
+2022-08-30 14:34:49,560 DEBUG [main] cmn.LoggerManger  ( BookDao.java:43)     - 1163032212-9791163032212,Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석,고경희,소프트웨어 공학,2022-08-30,1
+2022-08-30 14:42:00,816 DEBUG [main] cmn.LoggerManger  ( BookDao.java:45)     - 9791163031222,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문,이고잉 고경희,소프트웨어 공학,2019년 12월 06일,1
+2022-08-30 14:42:00,818 DEBUG [main] cmn.LoggerManger  ( BookDao.java:45)     - 9791162242261,파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발,김석훈,소프트웨어 공학 ,2022-08-30,1
+2022-08-30 14:42:00,818 DEBUG [main] cmn.LoggerManger  ( BookDao.java:45)     - 1163032212-9791163032212,Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석,고경희,소프트웨어 공학,2022-08-30,1
+2022-08-30 14:42:00,818 DEBUG [main] cmn.LoggerManger  ( BookDao.java:26)     - data.size():3
+2022-08-30 14:43:45,276 DEBUG [main] cmn.LoggerManger  ( BookDao.java:49)     - 9791163031222,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문,이고잉 고경희,소프트웨어 공학,2019년 12월 06일,1
+2022-08-30 14:43:45,278 DEBUG [main] cmn.LoggerManger  ( BookDao.java:49)     - 9791162242261,파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발,김석훈,소프트웨어 공학 ,2022-08-30,1
+2022-08-30 14:43:45,278 DEBUG [main] cmn.LoggerManger  ( BookDao.java:49)     - 1163032212-9791163032212,Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석,고경희,소프트웨어 공학,2022-08-30,1
+2022-08-30 14:43:45,279 DEBUG [main] cmn.LoggerManger  ( BookDao.java:26)     - data.size():3
+2022-08-30 14:43:45,279 DEBUG [main] cmn.LoggerManger  ( BookDao.java:29)     - Book [isbn=9791163031222, title=Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문, author=이고잉 고경희, genre=소프트웨어 공학, publicationDate=2019년 12월 06일, isBorrow=true]
+2022-08-30 14:43:45,280 DEBUG [main] cmn.LoggerManger  ( BookDao.java:29)     - Book [isbn=9791162242261, title=파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발, author=김석훈, genre=소프트웨어 공학 , publicationDate=2022-08-30, isBorrow=true]
+2022-08-30 14:43:45,280 DEBUG [main] cmn.LoggerManger  ( BookDao.java:29)     - Book [isbn=1163032212-9791163032212, title=Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석, author=고경희, genre=소프트웨어 공학, publicationDate=2022-08-30, isBorrow=true]
+2022-08-30 15:31:19,659 DEBUG [main] cmn.LoggerManger  ( BookDao.java:50)     - 9791163031222,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문,이고잉 고경희,소프트웨어 공학,2019년 12월 06일,1
+2022-08-30 15:31:19,661 DEBUG [main] cmn.LoggerManger  ( BookDao.java:50)     - 9791162242261,파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발,김석훈,소프트웨어 공학 ,2022-08-30,1
+2022-08-30 15:31:19,661 DEBUG [main] cmn.LoggerManger  ( BookDao.java:50)     - 1163032212-9791163032212,Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석,고경희,소프트웨어 공학,2022-08-30,1
+2022-08-30 15:31:19,661 DEBUG [main] cmn.LoggerManger  ( BookDao.java:26)     - data.size():3
+2022-08-30 15:31:19,662 DEBUG [main] cmn.LoggerManger  ( BookDao.java:29)     - Book [isbn=9791163031222, title=Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문, author=이고잉 고경희, genre=소프트웨어 공학, publicationDate=2019년 12월 06일, isBorrow=true]
+2022-08-30 15:31:19,663 DEBUG [main] cmn.LoggerManger  ( BookDao.java:29)     - Book [isbn=9791162242261, title=파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발, author=김석훈, genre=소프트웨어 공학 , publicationDate=2022-08-30, isBorrow=true]
+2022-08-30 15:31:19,663 DEBUG [main] cmn.LoggerManger  ( BookDao.java:29)     - Book [isbn=1163032212-9791163032212, title=Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석, author=고경희, genre=소프트웨어 공학, publicationDate=2022-08-30, isBorrow=true]
+2022-08-30 15:31:19,663 DEBUG [main] cmn.LoggerManger  (BookDaoTest.java:26)     - Book [isbn=9791163031222_001, title=Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001, author=이고잉 고경희_001, genre=소프트웨어 공학, publicationDate=2019-12-06, isBorrow=true]
+2022-08-30 15:31:19,663 DEBUG [main] cmn.LoggerManger  (BookDaoTest.java:27)     - 등록 성공
+2022-08-30 15:33:44,564 DEBUG [main] cmn.LoggerManger  ( BookDao.java:50)     - 9791163031222,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문,이고잉 고경희,소프트웨어 공학,2019년 12월 06일,1
+2022-08-30 15:33:44,566 DEBUG [main] cmn.LoggerManger  ( BookDao.java:50)     - 9791162242261,파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발,김석훈,소프트웨어 공학 ,2022-08-30,1
+2022-08-30 15:33:44,566 DEBUG [main] cmn.LoggerManger  ( BookDao.java:50)     - 1163032212-9791163032212,Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석,고경희,소프트웨어 공학,2022-08-30,1
+2022-08-30 15:33:44,566 DEBUG [main] cmn.LoggerManger  ( BookDao.java:26)     - data.size():3
+2022-08-30 15:33:44,568 DEBUG [main] cmn.LoggerManger  ( BookDao.java:29)     - Book [isbn=9791163031222, title=Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문, author=이고잉 고경희, genre=소프트웨어 공학, publicationDate=2019년 12월 06일, isBorrow=true]
+2022-08-30 15:33:44,568 DEBUG [main] cmn.LoggerManger  ( BookDao.java:29)     - Book [isbn=9791162242261, title=파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발, author=김석훈, genre=소프트웨어 공학 , publicationDate=2022-08-30, isBorrow=true]
+2022-08-30 15:33:44,568 DEBUG [main] cmn.LoggerManger  ( BookDao.java:29)     - Book [isbn=1163032212-9791163032212, title=Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석, author=고경희, genre=소프트웨어 공학, publicationDate=2022-08-30, isBorrow=true]
+2022-08-30 15:33:44,568 DEBUG [main] cmn.LoggerManger  (BookDaoTest.java:26)     - Book [isbn=9791163031222_001, title=Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001, author=이고잉 고경희_001, genre=소프트웨어 공학, publicationDate=2019-12-06, isBorrow=true]
+2022-08-30 15:33:44,568 DEBUG [main] cmn.LoggerManger  (BookDaoTest.java:27)     - 등록 성공
+2022-08-30 15:46:18,007 DEBUG [main] cmn.LoggerManger  ( BookDao.java:52)     - 9791163031222,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문,이고잉 고경희,소프트웨어 공학,2019년 12월 06일,1
+2022-08-30 15:46:18,009 DEBUG [main] cmn.LoggerManger  ( BookDao.java:52)     - 9791162242261,파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발,김석훈,소프트웨어 공학 ,2022-08-30,1
+2022-08-30 15:46:18,009 DEBUG [main] cmn.LoggerManger  ( BookDao.java:52)     - 1163032212-9791163032212,Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석,고경희,소프트웨어 공학,2022-08-30,1
+2022-08-30 15:46:18,009 DEBUG [main] cmn.LoggerManger  ( BookDao.java:28)     - data.size():3
+2022-08-30 15:46:18,010 DEBUG [main] cmn.LoggerManger  ( BookDao.java:31)     - Book [isbn=9791163031222, title=Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문, author=이고잉 고경희, genre=소프트웨어 공학, publicationDate=2019년 12월 06일, isBorrow=true]
+2022-08-30 15:46:18,010 DEBUG [main] cmn.LoggerManger  ( BookDao.java:31)     - Book [isbn=9791162242261, title=파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발, author=김석훈, genre=소프트웨어 공학 , publicationDate=2022-08-30, isBorrow=true]
+2022-08-30 15:46:18,010 DEBUG [main] cmn.LoggerManger  ( BookDao.java:31)     - Book [isbn=1163032212-9791163032212, title=Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석, author=고경희, genre=소프트웨어 공학, publicationDate=2022-08-30, isBorrow=true]
+2022-08-30 15:46:18,010 DEBUG [main] cmn.LoggerManger  (BookDaoTest.java:26)     - Book [isbn=9791163031222_001, title=Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001, author=이고잉 고경희_001, genre=소프트웨어 공학, publicationDate=2019-12-06, isBorrow=true]
+2022-08-30 15:46:18,010 DEBUG [main] cmn.LoggerManger  (BookDaoTest.java:27)     - 등록 성공
+2022-08-30 17:28:51,020 DEBUG [main] cmn.LoggerManger  ( BookDao.java:56)     - 9791163031222,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문,이고잉 고경희,소프트웨어 공학,2019년 12월 06일,true
+2022-08-30 17:28:51,025 DEBUG [main] cmn.LoggerManger  ( BookDao.java:56)     - 9791162242261,파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발,김석훈,소프트웨어 공학 ,2022-08-30,true
+2022-08-30 17:28:51,025 DEBUG [main] cmn.LoggerManger  ( BookDao.java:56)     - 1163032212-9791163032212,Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석,고경희,소프트웨어 공학,2022-08-30,true
+2022-08-30 17:28:51,025 DEBUG [main] cmn.LoggerManger  ( BookDao.java:56)     - 9791163031222_001,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001,이고잉 고경희_001,소프트웨어 공학,2019-12-06,true
+2022-08-30 17:28:51,027 DEBUG [main] cmn.LoggerManger  ( BookDao.java:31)     - data.size():4
+2022-08-30 17:28:51,027 DEBUG [main] cmn.LoggerManger  ( BookDao.java:34)     - Book [isbn=9791163031222, title=Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문, author=이고잉 고경희, genre=소프트웨어 공학, publicationDate=2019년 12월 06일, isBorrow=false]
+2022-08-30 17:28:51,027 DEBUG [main] cmn.LoggerManger  ( BookDao.java:34)     - Book [isbn=9791162242261, title=파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발, author=김석훈, genre=소프트웨어 공학 , publicationDate=2022-08-30, isBorrow=false]
+2022-08-30 17:28:51,027 DEBUG [main] cmn.LoggerManger  ( BookDao.java:34)     - Book [isbn=1163032212-9791163032212, title=Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석, author=고경희, genre=소프트웨어 공학, publicationDate=2022-08-30, isBorrow=false]
+2022-08-30 17:28:51,027 DEBUG [main] cmn.LoggerManger  ( BookDao.java:34)     - Book [isbn=9791163031222_001, title=Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001, author=이고잉 고경희_001, genre=소프트웨어 공학, publicationDate=2019-12-06, isBorrow=false]
+2022-08-30 17:28:51,027 DEBUG [main] cmn.LoggerManger  (BookDaoTest.java:26)     - Book [isbn=9791163031222_001, title=Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001, author=이고잉 고경희_001, genre=소프트웨어 공학, publicationDate=2019-12-06, isBorrow=true]
+2022-08-30 17:28:51,027 DEBUG [main] cmn.LoggerManger  (BookDaoTest.java:27)     - 등록 성공
+2022-08-30 17:35:41,236 DEBUG [main] cmn.LoggerManger  ( BookDao.java:56)     - 9791163031222,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문,이고잉 고경희,소프트웨어 공학,2019년 12월 06일,true
+2022-08-30 17:35:41,238 DEBUG [main] cmn.LoggerManger  ( BookDao.java:56)     - 9791162242261,파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발,김석훈,소프트웨어 공학 ,2022-08-30,true
+2022-08-30 17:35:41,238 DEBUG [main] cmn.LoggerManger  ( BookDao.java:56)     - 1163032212-9791163032212,Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석,고경희,소프트웨어 공학,2022-08-30,true
+2022-08-30 17:35:41,239 DEBUG [main] cmn.LoggerManger  ( BookDao.java:56)     - 9791163031222_001,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001,이고잉 고경희_001,소프트웨어 공학,2019-12-06,true
+2022-08-30 17:35:41,240 DEBUG [main] cmn.LoggerManger  ( BookDao.java:31)     - data.size():4
+2022-08-30 17:35:41,240 DEBUG [main] cmn.LoggerManger  ( BookDao.java:34)     - Book [isbn=9791163031222, title=Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문, author=이고잉 고경희, genre=소프트웨어 공학, publicationDate=2019년 12월 06일, isBorrow=false]
+2022-08-30 17:35:41,240 DEBUG [main] cmn.LoggerManger  ( BookDao.java:34)     - Book [isbn=9791162242261, title=파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발, author=김석훈, genre=소프트웨어 공학 , publicationDate=2022-08-30, isBorrow=false]
+2022-08-30 17:35:41,240 DEBUG [main] cmn.LoggerManger  ( BookDao.java:34)     - Book [isbn=1163032212-9791163032212, title=Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석, author=고경희, genre=소프트웨어 공학, publicationDate=2022-08-30, isBorrow=false]
+2022-08-30 17:35:41,240 DEBUG [main] cmn.LoggerManger  ( BookDao.java:34)     - Book [isbn=9791163031222_001, title=Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001, author=이고잉 고경희_001, genre=소프트웨어 공학, publicationDate=2019-12-06, isBorrow=false]
+2022-08-30 17:35:41,240 DEBUG [main] cmn.LoggerManger  ( BookDao.java:148)     - isContains:true
+2022-08-30 17:35:41,240 DEBUG [main] cmn.LoggerManger  (BookDaoTest.java:26)     - Book [isbn=9791163031222_001, title=Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001, author=이고잉 고경희_001, genre=소프트웨어 공학, publicationDate=2019-12-06, isBorrow=true]
+2022-08-30 17:35:41,240 DEBUG [main] cmn.LoggerManger  (BookDaoTest.java:27)     - 등록 성공
+2022-08-30 17:56:29,223 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791163031222,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문,이고잉 고경희,소프트웨어 공학,2019년 12월 06일,true
+2022-08-30 17:56:29,225 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791162242261,파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발,김석훈,소프트웨어 공학 ,2022-08-30,true
+2022-08-30 17:56:29,226 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 1163032212-9791163032212,Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석,고경희,소프트웨어 공학,2022-08-30,true
+2022-08-30 17:56:29,226 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791163031222_001,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001,이고잉 고경희_001,소프트웨어 공학,2019-12-06,true
+2022-08-30 17:57:48,097 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791163031222,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문,이고잉 고경희,소프트웨어 공학,2019년 12월 06일,true
+2022-08-30 17:57:48,099 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791162242261,파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발,김석훈,소프트웨어 공학 ,2022-08-30,true
+2022-08-30 17:57:48,099 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 1163032212-9791163032212,Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석,고경희,소프트웨어 공학,2022-08-30,true
+2022-08-30 17:57:48,099 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791163031222_001,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001,이고잉 고경희_001,소프트웨어 공학,2019-12-06,true
+2022-08-30 17:58:25,687 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791163031222,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문,이고잉 고경희,소프트웨어 공학,2019년 12월 06일,true
+2022-08-30 17:58:25,689 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791162242261,파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발,김석훈,소프트웨어 공학 ,2022-08-30,true
+2022-08-30 17:58:25,689 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 1163032212-9791163032212,Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석,고경희,소프트웨어 공학,2022-08-30,true
+2022-08-30 17:58:25,689 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791163031222_001,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001,이고잉 고경희_001,소프트웨어 공학,2019-12-06,true
+2022-08-30 18:00:22,880 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791163031222,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문,이고잉 고경희,소프트웨어 공학,2019년 12월 06일,true
+2022-08-30 18:00:22,882 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791162242261,파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발,김석훈,소프트웨어 공학 ,2022-08-30,true
+2022-08-30 18:00:22,882 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 1163032212-9791163032212,Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석,고경희,소프트웨어 공학,2022-08-30,true
+2022-08-30 18:00:22,882 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791163031222_001,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001,이고잉 고경희_001,소프트웨어 공학,2019-12-06,true
+2022-08-30 18:01:17,624 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791163031222,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문,이고잉 고경희,소프트웨어 공학,2019년 12월 06일,true
+2022-08-30 18:01:17,626 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791162242261,파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발,김석훈,소프트웨어 공학 ,2022-08-30,true
+2022-08-30 18:01:17,626 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 1163032212-9791163032212,Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석,고경희,소프트웨어 공학,2022-08-30,true
+2022-08-30 18:01:17,626 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791163031222_001,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001,이고잉 고경희_001,소프트웨어 공학,2019-12-06,true
+2022-08-30 18:02:35,916 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791163031222,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문,이고잉 고경희,소프트웨어 공학,2019년 12월 06일,true
+2022-08-30 18:02:35,918 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791162242261,파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발,김석훈,소프트웨어 공학 ,2022-08-30,true
+2022-08-30 18:02:35,918 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 1163032212-9791163032212,Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석,고경희,소프트웨어 공학,2022-08-30,true
+2022-08-30 18:02:35,918 DEBUG [main] cmn.LoggerManger  ( BookDao.java:107)     - 9791163031222_001,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001,이고잉 고경희_001,소프트웨어 공학,2019-12-06,true
+2022-08-30 18:03:47,710 DEBUG [main] cmn.LoggerManger  ( BookDao.java:61)     - 9791163031222,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문,이고잉 고경희,소프트웨어 공학,2019년 12월 06일,true
+2022-08-30 18:03:47,712 DEBUG [main] cmn.LoggerManger  ( BookDao.java:61)     - 9791162242261,파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발,김석훈,소프트웨어 공학 ,2022-08-30,true
+2022-08-30 18:03:47,712 DEBUG [main] cmn.LoggerManger  ( BookDao.java:61)     - 1163032212-9791163032212,Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석,고경희,소프트웨어 공학,2022-08-30,true
+2022-08-30 18:03:47,712 DEBUG [main] cmn.LoggerManger  ( BookDao.java:61)     - 9791163031222_001,Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001,이고잉 고경희_001,소프트웨어 공학,2019-12-06,true
+2022-08-30 18:03:47,714 DEBUG [main] cmn.LoggerManger  ( BookDao.java:36)     - data.size():4
+2022-08-30 18:03:47,714 DEBUG [main] cmn.LoggerManger  ( BookDao.java:39)     - Book [isbn=9791163031222, title=Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문, author=이고잉 고경희, genre=소프트웨어 공학, publicationDate=2019년 12월 06일, isBorrow=false]
+2022-08-30 18:03:47,714 DEBUG [main] cmn.LoggerManger  ( BookDao.java:39)     - Book [isbn=9791162242261, title=파이썬 웹프로그래밍(실전편):Django(장고)를 활용한 쉽고 빠른 웹 개발, author=김석훈, genre=소프트웨어 공학 , publicationDate=2022-08-30, isBorrow=false]
+2022-08-30 18:03:47,714 DEBUG [main] cmn.LoggerManger  ( BookDao.java:39)     - Book [isbn=1163032212-9791163032212, title=Do it! HTML+CSS+<b>자바</b>스크립트 웹 표준의 정석, author=고경희, genre=소프트웨어 공학, publicationDate=2022-08-30, isBorrow=false]
+2022-08-30 18:03:47,714 DEBUG [main] cmn.LoggerManger  ( BookDao.java:39)     - Book [isbn=9791163031222_001, title=Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001, author=이고잉 고경희_001, genre=소프트웨어 공학, publicationDate=2019-12-06, isBorrow=false]
+2022-08-30 18:03:47,714 DEBUG [main] cmn.LoggerManger  ( BookDao.java:191)     - isContains:true
+2022-08-30 18:03:47,714 DEBUG [main] cmn.LoggerManger  (BookDaoTest.java:26)     - Book [isbn=9791163031222_001, title=Do it! 지옥에서 온 문서 관리자 깃&깃허브 입문_001, author=이고잉 고경희_001, genre=소프트웨어 공학, publicationDate=2019-12-06, isBorrow=true]
+2022-08-30 18:03:47,714 DEBUG [main] cmn.LoggerManger  (BookDaoTest.java:27)     - 등록 성공

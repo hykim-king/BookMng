@@ -1,6 +1,10 @@
 package com.pcwk.ehr.library.dao;
 
 import java.lang.reflect.Type;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
+
 import com.google.gson.reflect.TypeToken;
 
 
@@ -9,6 +13,7 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +21,7 @@ import com.google.gson.Gson;
 import com.pcwk.ehr.cmn.DTO;
 import com.pcwk.ehr.cmn.LoggerManger;
 import com.pcwk.ehr.cmn.WorkDiv;
+
 import com.pcwk.ehr.library.domain.Book;
 import com.pcwk.ehr.library.domain.Search;
 
@@ -28,7 +34,7 @@ public class BookDao implements WorkDiv<Book>, LoggerManger {
 	// 저장파일 경로
 	public final static String SAVE_FILE_PATH = "C:\\Users\\ITSC\\git\\BookMng\\boot.csv";
 
-	public final static String SAVE_JSON_FILE_PATH = "C:\\Users\\ITSC\\git\\BookMng\\boot.gson";
+	public final static String SAVE_JSON_FILE_PATH = "C:\\Users\\ITSC\\git\\BookMng\\book.gson";
 	
 	
 	public BookDao() {
@@ -44,8 +50,8 @@ public class BookDao implements WorkDiv<Book>, LoggerManger {
 	/**
 	 * 파일 읽기
 	 * 
-	 * @param path
-	 * @return
+	 * @param  filePath String
+	 * @return int
 	 */
 	public int readFile(String filePath) {
 		int flag = 0;
@@ -92,6 +98,11 @@ public class BookDao implements WorkDiv<Book>, LoggerManger {
 		return flag;
 	}
 
+	/**
+	 * JSON파일 읽기
+	 * @param  filePath String
+	 * @return int
+	 */
 	public int readFileJson(String filePath) {
 		Gson gson = new Gson();
 		int flag = 0;
@@ -148,11 +159,77 @@ public class BookDao implements WorkDiv<Book>, LoggerManger {
 		return flag;
 	}
 
+	
+	
+
+	
+	/**
+	 * 파일 저장
+	 * @param  filePath String
+	 * @param  search String
+	 * @return String
+	 */
+	public String writeNaverJSonFile(String filePath,String search) {
+		int flag = 1;
+		
+		String clientId = "PF2hZcj7_cmVHc8unUOn";
+		String clientSecret = "Z2F9wQ0NVO";
+		StringBuilder sb=new StringBuilder();
+		BufferedReader br = null;
+		try (FileWriter fw = new FileWriter(BookDao.SAVE_JSON_FILE_PATH);
+				BufferedWriter bw = new BufferedWriter(fw);) {
+			String text = URLEncoder.encode(search, "UTF-8");
+			String apiURL = "https://openapi.naver.com/v1/search/book.json?query=" + text + "&display=20";
+
+			URL url = new URL(apiURL);
+
+			HttpURLConnection con = (HttpURLConnection) url.openConnection();
+			con.setRequestMethod("GET");
+			con.setRequestProperty("X-Naver-Client-Id", clientId);
+			con.setRequestProperty("X-Naver-Client-Secret", clientSecret);
+
+			int responseCode = con.getResponseCode();// 접속 상태 코드
+			LOG.debug("responseCode:" + responseCode);
+
+			if (responseCode == 200) {// 접속과, 조회 성공
+				br = new BufferedReader(new InputStreamReader(con.getInputStream()));
+			} else {// 접속 오류
+				br = new BufferedReader(new InputStreamReader(con.getErrorStream()));
+			}
+
+			LOG.debug("blog검색:" + text);
+
+			String inputLine = "";// 데이터를 1줄씩 read
+			while ((inputLine = br.readLine()) != null) {// 더이상 읽을 데이터가 없으면 null return
+				bw.write(inputLine+"\n");
+				sb.append(inputLine+"\n");
+				LOG.debug(inputLine);
+			}
+			System.out.println(sb.toString());
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			flag = 0;
+			e.printStackTrace();
+		} finally {
+			if(null !=br) {
+				// stream을 닫기!
+				try {
+					br.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}				
+			}
+		}
+		
+		return sb.toString().trim();
+	}
+	
 	/**
 	 * 파일 저장!
 	 * 
-	 * @param filePath
-	 * @return
+	 * @param  filePath String
+	 * @return int
 	 */
 	public int writeFile(String filePath) {
 		int flag = 0;
@@ -232,7 +309,7 @@ public class BookDao implements WorkDiv<Book>, LoggerManger {
 
 	/**
 	 * 도서목록에 도서존재 확인
-	 * @param book
+	 * @param  book Book
 	 * @return true(존재)/false(없음)
 	 */
 	public boolean isBookExists(Book book) {
