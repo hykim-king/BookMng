@@ -2,3 +2,5 @@ com.pcwk.ehr.cmn
 com.pcwk.ehr.library.dao
 com.pcwk.ehr.library.domain
 com.pcwk.ehr.library.test
+com.pcwk.ehr.naver.library.dao
+com.pcwk.ehr.naver.library.domain

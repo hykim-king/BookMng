@@ -1,0 +1,639 @@
+--emp 테이블을 조회하여 모든 사원의 이름과 급여를 아래와 같은 형태로																				
+--출력하세요																				
+col 	"Name and Sal" for a23
+SELECT ename|| q'[ 's sal is $]' || sal as "Name and Sal"
+FROM emp;   
+
+ENAME                       SAL
+-------------------- ----------
+SMITH                       800
+ALLEN                      1600
+WARD                       1250
+JONES                      2975
+MARTIN                     1250
+BLAKE                      2850
+CLARK                      2450
+SCOTT                      3000
+KING                       5000
+TURNER                     1500
+JAMES                       950
+FORD                       3000
+MILLER                     1300
+
+13 행이 선택되었습니다.
+--*********************************************************--
+--emp테이블의 모든 열을 급여 기준으로 오름차순 정렬하기									
+--오름차순: 첫 번째 데이터보다 다음 데이터가 갈수록 커지는 것을 의미(ASC)									
+--내림차순: 첫 번쨰 데이터보다 다음 데이터가 갈수록 작아지는 것을 의미(DESC)
+SELECT *
+FROM emp
+ORDER BY sal DESC
+;
+
+     EMPNO ENAME                JOB                       MGR HIREDATE        SAL       COMM     DEPTNO
+---------- -------------------- ------------------ ---------- -------- ---------- ---------- ----------
+      7839 KING                 PRESIDENT                     81/11/17       5000                    10
+      7902 FORD                 ANALYST                  7566 81/12/03       3000                    20
+      7788 SCOTT                ANALYST                  7566 87/04/19       3000                    20
+      7566 JONES                MANAGER                  7839 81/04/02       2975                    20
+      7698 BLAKE                MANAGER                  7839 81/05/01       2850                    30
+      7782 CLARK                MANAGER                  7839 81/06/09       2450                    10
+      7499 ALLEN                SALESMAN                 7698 81/02/20       1600        300         30
+      7844 TURNER               SALESMAN                 7698 81/09/08       1500          0         30
+      7934 MILLER               CLERK                    7782 82/01/23       1300                    10
+      7521 WARD                 SALESMAN                 7698 81/02/22       1250        500         30
+      7654 MARTIN               SALESMAN                 7698 81/09/28       1250       1400         30
+      7900 JAMES                CLERK                    7698 81/12/03        950                    30
+      7369 SMITH                CLERK                    7902 80/12/17        800                    20
+
+13 행이 선택되었습니다.
+--*********************************************************--
+--emp테이블의 전체 열을 부서번호(asc)와 급여(desc)로 정렬								
+
+SELECT *
+FROM emp
+ORDER BY deptno asc, sal desc
+;
+
+     EMPNO ENAME                JOB                       MGR HIREDATE        SAL       COMM     DEPTNO
+---------- -------------------- ------------------ ---------- -------- ---------- ---------- ----------
+      7839 KING                 PRESIDENT                     81/11/17       5000                    10
+      7782 CLARK                MANAGER                  7839 81/06/09       2450                    10
+      7934 MILLER               CLERK                    7782 82/01/23       1300                    10
+      7788 SCOTT                ANALYST                  7566 87/04/19       3000                    20
+      7902 FORD                 ANALYST                  7566 81/12/03       3000                    20
+      7566 JONES                MANAGER                  7839 81/04/02       2975                    20
+      7369 SMITH                CLERK                    7902 80/12/17        800                    20
+      7698 BLAKE                MANAGER                  7839 81/05/01       2850                    30
+      7499 ALLEN                SALESMAN                 7698 81/02/20       1600        300         30
+      7844 TURNER               SALESMAN                 7698 81/09/08       1500          0         30
+      7521 WARD                 SALESMAN                 7698 81/02/22       1250        500         30
+      7654 MARTIN               SALESMAN                 7698 81/09/28       1250       1400         30
+      7900 JAMES                CLERK                    7698 81/12/03        950                    30
+
+13 행이 선택되었습니다.
+--*********************************************************--
+SELECT DISTINCT JOB
+FROM emp
+;
+
+JOB
+------------------
+CLERK
+SALESMAN
+MANAGER
+ANALYST
+PRESIDENT
+--*********************************************************--
+SELECT empno  AS employee_no,
+       ename  AS employee_name,
+	   mgr    AS manager,
+	   sal    AS salary,
+	   comm   AS commission,
+	   deptno AS department_no
+FROM emp
+ORDER BY deptno DESC, ename ASC
+;
+EMPLOYEE_NO EMPLOYEE_NAME           MANAGER     SALARY COMMISSION DEPARTMENT_NO
+----------- -------------------- ---------- ---------- ---------- -------------
+       7499 ALLEN                      7698       1600        300            30
+       7698 BLAKE                      7839       2850                       30
+       7900 JAMES                      7698        950                       30
+       7654 MARTIN                     7698       1250       1400            30
+       7844 TURNER                     7698       1500          0            30
+       7521 WARD                       7698       1250        500            30
+       7902 FORD                       7566       3000                       20
+       7566 JONES                      7839       2975                       20
+       7788 SCOTT                      7566       3000                       20
+       7369 SMITH                      7902        800                       20
+       7782 CLARK                      7839       2450                       10
+       7839 KING                                  5000                       10
+       7934 MILLER                     7782       1300                       10
+
+13 행이 선택되었습니다.
+--*********************************************************--
+SELECT *
+FROM emp
+WHERE deptno = 30
+;
+
+     EMPNO ENAME                JOB                       MGR HIREDATE        SAL       COMM     DEPTNO
+---------- -------------------- ------------------ ---------- -------- ---------- ---------- ----------
+      7499 ALLEN                SALESMAN                 7698 81/02/20       1600        300         30
+      7521 WARD                 SALESMAN                 7698 81/02/22       1250        500         30
+      7654 MARTIN               SALESMAN                 7698 81/09/28       1250       1400         30
+      7698 BLAKE                MANAGER                  7839 81/05/01       2850                    30
+      7844 TURNER               SALESMAN                 7698 81/09/08       1500          0         30
+      7900 JAMES                CLERK                    7698 81/12/03        950                    30
+
+6 행이 선택되었습니다.
+--*********************************************************--
+SELECT *
+FROM emp
+WHERE empno = 7900
+;
+     EMPNO ENAME                JOB                       MGR HIREDATE        SAL       COMM     DEPTNO
+---------- -------------------- ------------------ ---------- -------- ---------- ---------- ----------
+      7900 JAMES                CLERK                    7698 81/12/03        950                    30
+--*********************************************************--
+--스미스(SMITH)의 사원 정보를 조회 하세요.
+
+SELECT *
+FROM emp
+WHERE ENAME ='SMITH'
+;
+     EMPNO ENAME                JOB                       MGR HIREDATE        SAL       COMM     DEPTNO
+---------- -------------------- ------------------ ---------- -------- ---------- ---------- ----------
+      7369 SMITH                CLERK                    7902 80/12/17        800                    20
+--*********************************************************--
+SELECT ename,
+       hiredate
+FROM emp
+WHERE hiredate = '80/12/17';
+
+ENAME                HIREDATE
+-------------------- --------
+SMITH                80/12/17
+--*********************************************************--
+--10부서에 사원이름, 급여를 출력 하세요.
+--문자열
+--숫자
+col  ename for a7      
+col  sal   for 9999999 
+
+SELECT ename,
+       sal 
+FROM emp
+WHERE deptno = 10
+;
+
+ENAME        SAL
+------- --------
+CLARK       2450
+KING        5000
+MILLER      1300
+
+SELECT ename,
+       sal,
+       sal+100	   
+FROM emp
+WHERE deptno = 10
+;
+
+ENAME        SAL    SAL+100
+------- -------- ----------
+CLARK       2450       2550
+KING        5000       5100
+MILLER      1300       1400
+
+--급여 10%인상
+SELECT ename,
+       sal,
+       sal*1.1	   
+FROM emp
+WHERE deptno = 10
+;
+
+ENAME        SAL    SAL*1.1
+------- -------- ----------
+CLARK       2450       2695
+KING        5000       5500
+MILLER      1300       1430
+--*********************************************************--
+--부서가 30번 이고(AND) JOB이 SALESMAN
+SELECT *
+FROM emp
+WHERE deptno = 30
+AND job = 'SALESMAN'
+;
+
+     EMPNO ENAME   JOB                       MGR HIREDATE      SAL       COMM     DEPTNO
+---------- ------- ------------------ ---------- -------- -------- ---------- ----------
+      7499 ALLEN   SALESMAN                 7698 81/02/20     1600        300         30
+      7521 WARD    SALESMAN                 7698 81/02/22     1250        500         30
+      7654 MARTIN  SALESMAN                 7698 81/09/28     1250       1400         30
+      7844 TURNER  SALESMAN                 7698 81/09/08     1500          0         30
+--*********************************************************--
+SELECT *
+FROM emp
+WHERE empno =7499
+AND deptno = 30
+;
+     EMPNO ENAME   JOB                       MGR HIREDATE      SAL       COMM     DEPTNO
+---------- ------- ------------------ ---------- -------- -------- ---------- ----------
+      7499 ALLEN   SALESMAN                 7698 81/02/20     1600        300         30
+--*********************************************************--
+--부서번호가 30번 또는 JOB 이 CLERK인 사원을 출력하세요									
+SELECT *
+FROM emp
+WHERE job = 'CLERK'
+OR deptno = 30
+;
+
+     EMPNO ENAME   JOB                       MGR HIREDATE      SAL       COMM     DEPTNO
+---------- ------- ------------------ ---------- -------- -------- ---------- ----------
+      7369 SMITH   CLERK                    7902 80/12/17      800                    20
+      7499 ALLEN   SALESMAN                 7698 81/02/20     1600        300         30
+      7521 WARD    SALESMAN                 7698 81/02/22     1250        500         30
+      7654 MARTIN  SALESMAN                 7698 81/09/28     1250       1400         30
+      7698 BLAKE   MANAGER                  7839 81/05/01     2850                    30
+      7844 TURNER  SALESMAN                 7698 81/09/08     1500          0         30
+      7900 JAMES   CLERK                    7698 81/12/03      950                    30
+      7934 MILLER  CLERK                    7782 82/01/23     1300                    10
+
+8 행이 선택되었습니다.
+--*********************************************************--
+SELECT *
+FROM emp
+WHERE job = 'SALESMAN'
+OR deptno <> 20
+;
+--*********************************************************--
+SELECT *
+FROM emp
+WHERE sal*12 = 36000
+;
+
+--조회되는 왼쪽은 가공하지 않는다.
+--sal인덱스가 있어도 사용하지 않는다.
+SELECT *
+FROM emp
+WHERE sal = 36000/12
+;
+11:21:53 SCOTT>@ORA15_OPERATOR.SQL
+
+     EMPNO ENAME   JOB                       MGR HIREDATE      SAL       COMM     DEPTNO
+---------- ------- ------------------ ---------- -------- -------- ---------- ----------
+      7788 SCOTT   ANALYST                  7566 87/04/19     3000                    20
+      7902 FORD    ANALYST                  7566 81/12/03     3000                    20
+--*********************************************************--
+--급여가 4000이상,사,이름,급여를 출력
+SELECT empno,
+       ename,
+       sal
+FROM emp
+WHERE sal >=4000
+;
+     EMPNO ENAME        SAL
+---------- ------- --------
+      7839 KING        5000
+--*********************************************************--
+SELECT empno,
+       ename,
+       sal
+FROM emp
+WHERE ename >='E'
+ORDER BY ename
+;
+     EMPNO ENAME        SAL
+---------- ------- --------
+      7902 FORD        3000
+      7900 JAMES        950
+      7566 JONES       2975
+      7839 KING        5000
+      7654 MARTIN      1250
+      7934 MILLER      1300
+      7788 SCOTT       3000
+      7369 SMITH        800
+      7844 TURNER      1500
+      7521 WARD        1250
+
+10 행이 선택되었습니다.
+
+SELECT empno,
+       ename,
+       sal
+FROM emp
+WHERE ename >='W'
+ORDER BY ename
+;
+     EMPNO ENAME        SAL
+---------- ------- --------
+      7521 WARD        1250
+--*********************************************************--
+--모두 결과는 동일 
+SELECT *
+FROM emp
+WHERE sal != 3000;
+
+
+SELECT *
+FROM emp
+WHERE sal <> 3000;
+
+SELECT *
+FROM emp
+WHERE sal ^= 3000;
+
+--논리 부정
+
+SELECT *
+FROM emp
+WHERE  NOT sal = 3000;
+
+     EMPNO ENAME   JOB                       MGR HIREDATE      SAL       COMM     DEPTNO
+---------- ------- ------------------ ---------- -------- -------- ---------- ----------
+      7369 SMITH   CLERK                    7902 80/12/17      800                    20
+      7499 ALLEN   SALESMAN                 7698 81/02/20     1600        300         30
+      7521 WARD    SALESMAN                 7698 81/02/22     1250        500         30
+      7566 JONES   MANAGER                  7839 81/04/02     2975                    20
+      7654 MARTIN  SALESMAN                 7698 81/09/28     1250       1400         30
+      7698 BLAKE   MANAGER                  7839 81/05/01     2850                    30
+      7782 CLARK   MANAGER                  7839 81/06/09     2450                    10
+      7839 KING    PRESIDENT                     81/11/17     5000                    10
+      7844 TURNER  SALESMAN                 7698 81/09/08     1500          0         30
+      7900 JAMES   CLERK                    7698 81/12/03      950                    30
+      7934 MILLER  CLERK                    7782 82/01/23     1300                    10
+
+11 행이 선택되었습니다.
+--*********************************************************--
+--직책이 SALESMAN 이거나 MANAGER 또는 CLERK
+--SELECT *
+--FROM emp
+--WHERE job = 'SALESMAN'
+--OR    job = 'MANAGER'
+--OR    job = 'CLERK'
+--ORDER BY job
+--;
+
+--SELECT *
+--FROM emp
+--WHERE job IN ( 'SALESMAN','MANAGER','CLERK')
+--ORDER BY job
+--
+--     EMPNO ENAME   JOB                       MGR HIREDATE      SAL       COMM     DEPTNO
+------------ ------- ------------------ ---------- -------- -------- ---------- ----------
+--      7900 JAMES   CLERK                    7698 81/12/03      950                    30
+--      7369 SMITH   CLERK                    7902 80/12/17      800                    20
+--      7934 MILLER  CLERK                    7782 82/01/23     1300                    10
+--      7782 CLARK   MANAGER                  7839 81/06/09     2450                    10
+--      7566 JONES   MANAGER                  7839 81/04/02     2975                    20
+--      7698 BLAKE   MANAGER                  7839 81/05/01     2850                    30
+--      7844 TURNER  SALESMAN                 7698 81/09/08     1500          0         30
+--      7521 WARD    SALESMAN                 7698 81/02/22     1250        500         30
+--      7499 ALLEN   SALESMAN                 7698 81/02/20     1600        300         30
+--      7654 MARTIN  SALESMAN                 7698 81/09/28     1250       1400         30
+--
+--10 행이 선택되었습니다.
+
+
+SELECT *
+FROM emp
+WHERE  job NOT IN ( 'SALESMAN','MANAGER','CLERK')
+ORDER BY job
+;
+     EMPNO ENAME   JOB                       MGR HIREDATE      SAL       COMM     DEPTNO
+---------- ------- ------------------ ---------- -------- -------- ---------- ----------
+      7788 SCOTT   ANALYST                  7566 87/04/19     3000                    20
+      7902 FORD    ANALYST                  7566 81/12/03     3000                    20
+      7839 KING    PRESIDENT                     81/11/17     5000                    10
+--*********************************************************--
+SELECT *
+FROM emp
+WHERE sal>=2000
+AND sal<=3000
+;
+
+
+BETWEEN 부등호 연산자로 변경되어 연산이 수행된다.
+작은 데이터가 앞에 큰 데이터가 뒤에 위치
+SELECT *
+FROM emp
+WHERE sal BETWEEN 2000 AND 3000
+;
+
+     EMPNO ENAME   JOB                       MGR HIREDATE      SAL       COMM     DEPTNO
+---------- ------- ------------------ ---------- -------- -------- ---------- ----------
+      7566 JONES   MANAGER                  7839 81/04/02     2975                    20
+      7698 BLAKE   MANAGER                  7839 81/05/01     2850                    30
+      7782 CLARK   MANAGER                  7839 81/06/09     2450                    10
+      7788 SCOTT   ANALYST                  7566 87/04/19     3000                    20
+      7902 FORD    ANALYST                  7566 81/12/03     3000                    20
+
+SELECT *
+FROM emp
+WHERE sal NOT BETWEEN 2000 AND 3000
+
+     EMPNO ENAME   JOB                       MGR HIREDATE      SAL       COMM     DEPTNO
+---------- ------- ------------------ ---------- -------- -------- ---------- ----------
+      7369 SMITH   CLERK                    7902 80/12/17      800                    20
+      7499 ALLEN   SALESMAN                 7698 81/02/20     1600        300         30
+      7521 WARD    SALESMAN                 7698 81/02/22     1250        500         30
+      7654 MARTIN  SALESMAN                 7698 81/09/28     1250       1400         30
+      7839 KING    PRESIDENT                     81/11/17     5000                    10
+      7844 TURNER  SALESMAN                 7698 81/09/08     1500          0         30
+      7900 JAMES   CLERK                    7698 81/12/03      950                    30
+      7934 MILLER  CLERK                    7782 82/01/23     1300                    10
+
+8 행이 선택되었습니다.
+--*********************************************************--
+--사원 이름이 'S'로 시작하는 사람을 출력하세요.
+SELECT *
+FROM emp
+WHERE ename LIKE 'S%'
+ORDER BY ename
+;
+     EMPNO ENAME   JOB                       MGR HIREDATE      SAL       COMM     DEPTNO
+---------- ------- ------------------ ---------- -------- -------- ---------- ----------
+      7788 SCOTT   ANALYST                  7566 87/04/19     3000                    20
+      7369 SMITH   CLERK                    7902 80/12/17      800                    20
+
+사원 이름이 두번째 스팰링이 'L'로 시작하는 사람을 출력하세요.
+아래 형태로 주면 인덱스가 있어도 사용하지 않음!
+SELECT *
+FROM emp
+WHERE ename LIKE '_L%'
+ORDER BY ename
+;
+     EMPNO ENAME   JOB                       MGR HIREDATE      SAL       COMM     DEPTNO
+---------- ------- ------------------ ---------- -------- -------- ---------- ----------
+      7499 ALLEN   SALESMAN                 7698 81/02/20     1600        300         30
+      7698 BLAKE   MANAGER                  7839 81/05/01     2850                    30
+      7782 CLARK   MANAGER                  7839 81/06/09     2450                    10
+	  
+
+--사원 이름에 'AM'을 포함하고 있는 사원을 출력하세요
+SELECT *
+FROM emp
+WHERE ename LIKE '%AM%'
+ORDER BY ename	
+;  
+     EMPNO ENAME   JOB                       MGR HIREDATE      SAL       COMM     DEPTNO
+---------- ------- ------------------ ---------- -------- -------- ---------- ----------
+      7900 JAMES   CLERK                    7698 81/12/03      950                    30
+	  
+--*********************************************************--
+SELECT *
+FROM emp
+WHERE sal LIKE '1%'
+;
+
+--     EMPNO ENAME   JOB                       MGR HIREDATE      SAL       COMM     DEPTNO
+------------ ------- ------------------ ---------- -------- -------- ---------- ----------
+--      7499 ALLEN   SALESMAN                 7698 81/02/20     1600        300         30
+--      7521 WARD    SALESMAN                 7698 81/02/22     1250        500         30
+--      7654 MARTIN  SALESMAN                 7698 81/09/28     1250       1400         30
+--      7844 TURNER  SALESMAN                 7698 81/09/08     1500          0         30
+--      7934 MILLER  CLERK                    7782 82/01/23     1300                    10
+--*********************************************************--
+--날짜: 입사일이 82인 사람들 출력
+SELECT *
+FROM emp
+WHERE hiredate LIKE '82%'
+;
+
+     EMPNO ENAME   JOB                       MGR HIREDATE      SAL       COMM     DEPTNO
+---------- ------- ------------------ ---------- -------- -------- ---------- ----------
+      7934 MILLER  CLERK                    7782 82/01/23     1300                    10
+
+
+--날짜: 입사일이 12월 인 사람들 출력
+SELECT *
+FROM emp
+WHERE hiredate LIKE '___12%'
+;
+
+     EMPNO ENAME   JOB                       MGR HIREDATE      SAL       COMM     DEPTNO
+---------- ------- ------------------ ---------- -------- -------- ---------- ----------
+      7369 SMITH   CLERK                    7902 80/12/17      800                    20
+      7900 JAMES   CLERK                    7698 81/12/03      950                    30
+      7902 FORD    ANALYST                  7566 81/12/03     3000                    20
+--*********************************************************--
+SELECT ename,
+       sal,
+	   sal*12+comm,
+	   comm
+FROM emp
+;
+--*********************************************************--
+--등가 연산자로 null비교(x)
+--SELECT  *
+--  FROM emp
+-- WHERE comm = NULL
+--;
+
+--SELECT  *
+--  FROM emp
+-- WHERE comm IS NULL
+--;
+--
+--     EMPNO ENAME   JOB                       MGR HIREDATE      SAL       COMM     DEPTNO
+------------ ------- ------------------ ---------- -------- -------- ---------- ----------
+--      7369 SMITH   CLERK                    7902 80/12/17      800                    20
+--      7566 JONES   MANAGER                  7839 81/04/02     2975                    20
+--      7698 BLAKE   MANAGER                  7839 81/05/01     2850                    30
+--      7782 CLARK   MANAGER                  7839 81/06/09     2450                    10
+--      7788 SCOTT   ANALYST                  7566 87/04/19     3000                    20
+--      7839 KING    PRESIDENT                     81/11/17     5000                    10
+--      7900 JAMES   CLERK                    7698 81/12/03      950                    30
+--      7902 FORD    ANALYST                  7566 81/12/03     3000                    20
+--      7934 MILLER  CLERK                    7782 82/01/23     1300                    10
+--
+--9 행이 선택되었습니다.
+
+----COMMISSION이 NULL이 아님 사원
+SELECT  *
+  FROM emp
+ WHERE comm IS NOT NULL
+;
+--*********************************************************--
+SELECT t1.empno,			
+       t1.ename,			
+       t1.sal			
+FROM emp t1			
+WHERE t1.empno = &empno			
+;
+--*********************************************************--
+SELECT studno
+	  ,name
+	  ,deptno1
+	  ,1 AS tab_div
+FROM student t1
+WHERE deptno1 = 101
+UNION
+SELECT profno
+	   ,name
+	   ,deptno
+	   ,2
+FROM professor
+WHERE deptno = 101
+;
+    STUDNO NAME                       DEPTNO1    TAB_DIV
+---------- ----------------------- ---------- ----------
+      9411 James Seo                      101          1
+      9511 Billy Crystal                  101          1
+      9611 Richard Dreyfus                101          1
+      9711 Danny Devito                   101          1
+      1001 Audie Murphy                   101          2
+      1002 Angela Bassett                 101          2
+      1003 Jessica Lange                  101          2
+
+7 행이 선택되었습니다.  
+--*********************************************************--
+--SELECT studno
+--	  ,name
+--FROM student t1
+--WHERE deptno1 = 101
+--;
+
+--SELECT studno
+--	  ,name
+--FROM student t1
+--WHERE deptno2 = 201
+--;
+
+--    STUDNO NAME
+------------ ------------------------------------------------------------
+--      9411 James Seo
+--      9511 Billy Crystal
+--      9611 Richard Dreyfus
+--      9711 Danny Devito
+--
+--15:07:50 SCOTT>@ORA28_SET_UNION.SQL
+--
+--    STUDNO NAME
+------------ ------------------------------------------------------------
+--      9411 James Seo
+--      9512 Nicholas Cage
+
+--중복 데이터 제거
+SELECT studno
+	  ,name
+FROM student t1
+WHERE deptno1 = 101
+UNION
+SELECT studno
+	  ,name
+FROM student t1
+WHERE deptno2 = 201
+;
+
+    STUDNO NAME
+---------- ------------------------------------------------------------
+      9411 James Seo
+      9511 Billy Crystal
+      9611 Richard Dreyfus
+      9711 Danny Devito
+      9512 Nicholas Cage
+--*********************************************************--
+SELECT studno                  
+	  ,name
+FROM student t1
+WHERE deptno1 = 101
+UNION ALL   --중복제거 없음
+SELECT studno
+	  ,name
+FROM student t1
+WHERE deptno2 = 201
+;
+
+
+    STUDNO NAME
+---------- ------------------------------------------------------------
+      9411 James Seo
+      9511 Billy Crystal
+      9611 Richard Dreyfus
+      9711 Danny Devito
+      9411 James Seo
+      9512 Nicholas Cage
+--*********************************************************--
