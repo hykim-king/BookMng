@@ -6,9 +6,7 @@ public class FileMerge {
 
 	static int found = 0;//특정 단어 count
 	static String fileName = "PCWK_";//특정 단어 count
-	
 
-	
 	
 	public static void findInFile(File dir) throws IOException {
 		File[] files = dir.listFiles();//file, directory
@@ -51,7 +49,7 @@ public class FileMerge {
 					bw.append(data+"\n");
 					
 				}
-				bw.append("--*********************************************************--\n");
+				bw.append(fileName+"*********************************************************--\n\n");
 				
 				System.out.println("------------------------------------------");
 				
